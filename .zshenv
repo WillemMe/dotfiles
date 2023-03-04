@@ -42,9 +42,9 @@ export MOZ_ENABLE_WAYLAND=1
 export GTK_USE_PORTAL=1
 
 #npm
-prefix=${XDG_DATA_HOME}/npm
-cache=${XDG_CACHE_HOME}/npm
-init-module=${XDG_CONFIG_HOME}/npm/config/npm-init.js
+export prefix=${XDG_DATA_HOME}/npm
+export cache=${XDG_CACHE_HOME}/npm
+export init-module=${XDG_CONFIG_HOME}/npm/config/npm-init.js
 
 
 
