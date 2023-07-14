@@ -4,9 +4,13 @@
 hash -d \
 	cs="$HOME/The Bottle/Courses/" \
 	cf="$HOME/.config/" \
+	cv="$HOME/.config/nvim/lua/custom/" \
 	eww="$HOME/.config/eww" \
 	shell="$HOME/.config/zsh/configs" \
 	old="/mnt/home/willem"\
+	# Files
+	D="$HOME/Downloads" \
+
 
 #Files
 alias \

@@ -25,7 +25,8 @@ alias \
 	ls="ls -hN --color=auto --group-directories-first" \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
-	ccat="highlight --out-format=ansi"
+	ccat="highlight --out-format=ansi"\
+	ssh='TERM="xterm-256color" ssh'
 
 # These common commands are just too long! Abbreviate them.
 alias \
@@ -37,7 +38,8 @@ alias \
 	v="$EDITOR" \
 	p="sudo pacman" \
 	z="zathura"\
-	dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+	dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"\
+	hosts="sudo $EDITOR /etc/hosts"\
 
 # Update commands
 alias \
