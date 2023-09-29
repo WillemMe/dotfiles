@@ -128,6 +128,60 @@
           :value {brightness.level}
           :marks true
           :onchange "light -S {}")))
+    (box
+      :class "system-info-box"
+
+      ; cpu
+      (box
+        :class "sys-box"
+        :space-evenly false
+        :halign "start"
+        (circular-progress
+          :value "${EWW_CPU.avg}"
+          :class "sys-cpu"
+          :thickness 3
+          (label
+            :text ""
+            :class "sys-icon-cpu icon"))
+        (box
+          :orientation "v"
+          :vexpand false
+          (label
+            :text "cpu"
+            :halign "start"
+            :class "sys-text-cpu")
+          (label
+            :text "${round(EWW_CPU.avg,2)}%"
+            :halign "start"
+            :class "sys-text-sub")
+          (label
+            :text "${EWW_CPU.cores[0].freq} MHz"
+            :halign "start"
+            :class "sys-text-sub")))
+
+      ; memory
+      (box
+        :class "sys-box"
+        :space-evenly false
+        :halign "end"
+        (circular-progress
+          :value {memory.percentage}
+          :class "sys-mem"
+          :thickness 3
+          (label
+            :text ""
+            :class "sys-icon-mem icon"))
+        (box
+          :orientation "v"
+          (label
+            :text "memory"
+            :halign "start"
+            :class "sys-text-mem")
+          (label
+            :style "font-family:ProductSans;"
+            :text "${memory.used} | ${memory.total}"
+            :halign "start"
+            :class "sys-text-sub"))))
 
     (box
       :class "system-info-box"

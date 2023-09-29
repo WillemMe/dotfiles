@@ -55,6 +55,6 @@ zsh_add_plugin "zsh-users/zsh-autosuggestions"
 zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
 zsh_add_plugin "zsh-users/zsh-history-substring-search"
 zsh_add_plugin "Aloxaf/fzf-tab"
-zsh_add_plugin "ohmyzsh/ohmyzsh"  ## I Only Need One Thing From 0hmyzsh
+zsh_add_plugin "ohmyzsh/ohmyzsh"  
 zsh_add_plugin "BlaineEXE/zsh-cmd-status"
 zsh_add_plugin "hlissner/zsh-autopair"
