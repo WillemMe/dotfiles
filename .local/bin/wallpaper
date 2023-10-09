@@ -1,0 +1,21 @@
+#!/bin/bash
+command='hyprctl hyprpaper wallpaper'
+dir='/home/willem/.config/hypr/wallpapers/'
+Wallpapers=()
+while IFS= read -r -d '' file
+do
+    Wallpapers+=("${file#*/}") 
+done < <(find $dir -maxdepth 1 -mindepth 1 -type f -print0)
+printf "%s\n" "${Wallpapers[@]}"
+
+Monitors=('eDP-1' 'DP-5')
+
+if [ -z "$1" ] 
+  then
+  select=$(($RANDOM % ${#Wallpapers[@]}))
+else
+  select=$1
+fi
+$command ${Monitors[0]},/${Wallpapers[$select]}
+$command ${Monitors[1]},/${Wallpapers[$select]}
+

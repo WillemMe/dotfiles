@@ -1,0 +1,30 @@
+#!/bin/bash
+dir="$XDG_CONFIG_HOME/hypr/wallpapers/"
+paperconf="$XDG_CONFIG_HOME/hypr/hyprpaper.conf"
+Wallpapers=()
+while IFS= read -r -d '' file; do
+    Wallpapers+=("${file#$wallpapers_dir}") 
+done < <(find "$dir" -maxdepth 1 -mindepth 1 -type f -print0)
+Monitors=('eDP-1' 'DP-5')
+
+if [ -z "$1" ] 
+  then
+  select=$(($RANDOM % ${#Wallpapers[@]}))
+else
+  select=$1
+fi
+
+if [[ -e $paperconf ]]; then
+  #Empty conf
+  echo "" > $paperconf
+  
+  ##Append wallpapers
+  for wallpaper in "${Wallpapers[@]}"; do
+    echo "preload = $wallpaper" >> $paperconf
+  done
+
+  echo "wallpaper = ${Monitors[0]},${Wallpapers[$select]}" >> $paperconf
+  echo "wallpaper = ${Monitors[1]},${Wallpapers[$select]}" >> $paperconf
+fi
+
+
