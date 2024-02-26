@@ -9,5 +9,7 @@
 					:onclick "hyprctl dispatch workspace ${ws.number}"
 					:class "ws icon"
 					:style "color: ${ws.color};"
-					; :tooltip {ws.tooltip}
-					"●")))))
+					;:tooltip {ws.tooltip}
+        {ws.number ==  1 ?
+            "▲" :
+					"●"})))))
