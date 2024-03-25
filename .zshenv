@@ -76,4 +76,3 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$HOME/.local/share/cargo/bin
 export NVM_DIR="$HOME/.config/nvm"
 
-export CONDA_ENV_PATH="$HOME/Storage/Code/conda/envs/"
