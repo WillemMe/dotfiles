@@ -7,7 +7,7 @@ audio_default = [
 ]
 
 image_default = [
-  { command = "feh", args = [
+  { command = "imv", args = [
     "--",
   ], fork = true, silent = true },
   { command = "krita", args = [
@@ -20,7 +20,10 @@ image_default = [
 ]
 
 video_default = [
-  { command = "mpv", args = [
+  {command = "vlc", args = [
+    "--",
+  ], fork = true, silent = true },
+  {command = "mpv", args = [
     "--",
   ], fork = true, silent = true },
   { command = "mediainfo", pager = true },
@@ -40,7 +43,7 @@ text_default = [
   ] },
 ]
 
-reader_default = [{ command = "evince", fork = true, silent = true }]
+reader_default = [{ command = "zathura", fork = true, silent = true }]
 
 libreoffice_default = [{ command = "libreoffice", fork = true, silent = true }]
 

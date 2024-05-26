@@ -103,10 +103,10 @@ compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
 # Shortcuts
 . $ZDOTDIR/configs/shortcuts.zsh
 
-#export PYENV_ROOT="$HOME/.pyenv"
-#[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-#eval "$(pyenv init -)"
-#eval "$(pyenv virtualenv-init -)"
+export PYENV_ROOT="$HOME/.local/share/pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -124,6 +124,7 @@ compinit -d $XDG_CACHE_HOME/zsh/zcompdump-$ZSH_VERSION
 # <<< conda initialize <<<
 
 
+
 # Zoxide
 eval "$(zoxide init zsh --cmd cd)"
 
@@ -131,3 +132,9 @@ eval "$(zoxide init zsh --cmd cd)"
 # To customize prompt, run `p10k configure` or edit ~/.config/zsh/.p10k.zsh.
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
 #eval "$(starship init zsh)"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/willem/Hacking/Bussiness CTF/CloudOfSmoke/google-cloud-sdk/path.zsh.inc' ]; then . '/home/willem/Hacking/Bussiness CTF/CloudOfSmoke/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/willem/Hacking/Bussiness CTF/CloudOfSmoke/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/willem/Hacking/Bussiness CTF/CloudOfSmoke/google-cloud-sdk/completion.zsh.inc'; fi

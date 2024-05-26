@@ -26,5 +26,5 @@ if [[ -e $paperconf ]]; then
   echo "wallpaper = ${Monitors[0]},${Wallpapers[$select]}" >> $paperconf
   echo "wallpaper = ${Monitors[1]},${Wallpapers[$select]}" >> $paperconf
 fi
-
+echo "splash = false" >> $paperconf
 

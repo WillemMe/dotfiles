@@ -10,6 +10,7 @@ keymap = [
   { keys = ["q"], commands = ["close_tab"] },
   { keys = ["ctrl+c"], commands = ["quit"] },
   { keys = ["Q"], commands = ["quit --output-current-directory"] },
+  { keys = ["S"], commands = ["quit --output-current-directory"] },
 
   { keys = ["R"], commands = ["reload_dirlist"] },
   { keys = ["z", "h"], commands = ["toggle_hidden"] },
@@ -105,7 +106,7 @@ keymap = [
   { keys = ["/"], commands = [":search "] },
   { keys = ["|"], commands = [":search_inc "] },
   { keys = ["\\"], commands = [":search_glob "] },
-  { keys = ["S"], commands = ["search_fzf"] },
+  { keys = ["F"], commands = ["search_fzf"] },
   { keys = ["C"], commands = ["subdir_fzf"] },
 
   { keys = ["n"], commands = ["search_next"] },
