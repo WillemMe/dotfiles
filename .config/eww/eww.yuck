@@ -29,7 +29,8 @@
     (bright)
     (volume-module)
     (bluetooth)
-    (net)
+    (systray :class "tray" :pack-direction "rtl" :icon-size "20")
+
     (label :class "seperator" :text "|")
     (sys)
     (label :class "seperator" :text "|")

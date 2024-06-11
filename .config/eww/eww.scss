@@ -42,6 +42,41 @@ tooltip {
   }
 }
 
+.tray {
+  image {
+    margin: 0px 5px;
+  }
+  menu {
+	border-radius: 15px;
+  border: 2px solid #BE9CE8;
+	padding: 5px 0px;
+
+	background-color: rgba(0, 0, 0, 0.8);
+
+	>menuitem {
+		padding: 0px 10px;
+    font-size: 0.2rem;
+		&:disabled label {
+			color: gray;
+		}
+
+		&:hover {
+			background-color: #BE9CE8;
+		}
+	}
+
+	separator {
+		//background-color: #222222;
+		padding-top: 10px;
+
+		//&:last-child {
+		//	padding: unset;
+		//}
+	}
+}
+}
+
+
 .icon {
   font-family: 'Material Symbols Outlined';
   label{
