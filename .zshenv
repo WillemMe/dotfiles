@@ -39,7 +39,7 @@ export ELECTRUMDIR="${XDG_DATA_HOME:-$HOME/.local/share}/electrum"
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/starship.toml"
 export GOPATH="$XDG_DATA_HOME"/go
-
+export NUGET_PACKAGES="$XDG_CACHE_HOME"/NuGetPackages
 
 #Firefox
 export MOZ_ENABLE_WAYLAND=1
