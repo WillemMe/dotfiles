@@ -3,7 +3,7 @@
 
 include "/home/willem/.gtkrc-2.0.mine"
 gtk-theme-name="Dark-decay"
-gtk-icon-theme-name="Oranchelo-beka"
+gtk-icon-theme-name="Oranchelo-Beka"
 gtk-font-name="Cantarell 11"
 gtk-cursor-theme-name="Sweet-cursors"
 gtk-cursor-theme-size=24
