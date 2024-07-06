@@ -1,0 +1,1 @@
+spotify-launcher spotifyd rustup rustdesk-bin obsidian nextcloud-client libreoffice-fresh nautilus
