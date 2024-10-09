@@ -36,7 +36,7 @@ icons[shutdown]="\uf011"
 icons[cancel]="\u00d7"
 
 declare -A actions
-actions[lockscreen]="swaylock"
+actions[lockscreen]="hyprlock -q"
 #actions[switchuser]="???"
 actions[logout]="loginctl kill-user 1000"
 actions[suspend]="systemctl suspend"
